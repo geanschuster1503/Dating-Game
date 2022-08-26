@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.svg">
+    <title> Decide Aí!</title>
+</head>
+<body>
+    
+    <div class="caixa">
+    <h1>Quer namorar comigo? &#10084; </h1>
+    <input type="submit" value="Sim" class="sim">
+    <input type="submit" value="Não" class="nao" >
+
+</div>
+</body>
+</html>
+
+<script>
+  var input = document.querySelector(".sim");
+  var input2 = document.querySelector(".nao");
+
+
+    function mostraAlerta() {
+
+        alert("Resposta Certa!");
+
+    }
+
+    function mostraAlerta2() {
+
+    alert("Resposta errada, tente de novo!");
+
+    }
+
+
+    
+    input.onclick = mostraAlerta;
+    input2.onclick=mostraAlerta2;
+
+</script>
